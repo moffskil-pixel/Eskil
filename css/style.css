@@ -9,10 +9,9 @@
         "s1 s2"
         "s3 s4"
         "ft ft";
-    grid-gap: 5px;
+    grid-gap:px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 7fr 3fr 7fr 7fr 3fr;
-   
     margin: auto;
 }
 header{
@@ -29,8 +28,9 @@ header .valkommen{
    margin: 0px ;
 }
 header .Kafe{
-   font-size: 5rem;
+   font-size: 4rem;
    margin: 0px;
+   font-family: ;
 }
 header .logo{
    width: 80px;
@@ -38,25 +38,62 @@ header .logo{
 }
 nav{
    grid-area:nav;
-   background-color: lightblue;
+   background-color: rgb(69, 85, 59);
+   position: relative;
+   min-height: 6rem;
 }
-#sec1{
+.nav-buttons{
+ position: absolute;
+   inset: 0; /* top:0; right:0; bottom:0; left:0; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   z-index: 2;
+   pointer-events: none;
+}
+.nav-button:hover{
+    transfrom: translateY(-3px) scale;
+}
+.sec1{
    grid-area:s1;
    background-color: lightcoral;
+   background-image: url("../img/Cozy_Cafe.jpg");
+    background-size: cover;
+    background-position: center center;
+
 }
-#sec2{
+.sec2{
    grid-area:s2;
    background-color: lightyellow;
+   background-image: url("../img/Bullar.avif");
+   background-size: cover;
+   background-position: center center;
+ 
+   
 }
-#sec3{
+.sec3{
    grid-area:s3;
    background-color: lightpink;
+   background-image: url("../img/choklad.avif");
+   background-size: cover;
+   background-position:center center;
 }
-section#sec4{
+.sec4{
    grid-area:s4;
    background-color: lightgray;
+   background-image: url("../img/Cozy_Cafe_Outside.jpg");
+    background-size: cover;
+    background-position: center center;
 }
 footer{
    grid-area:ft;
    background-color: lightgoldenrodyellow;
+   text-align: center;
 }/* Denna fil skall innehålla din CSS kod */
+footer .kontakt{
+   margin: 5px;
+   font-size: 1.5rem;
+   font-weight: bold;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

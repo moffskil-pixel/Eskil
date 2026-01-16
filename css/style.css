@@ -10,8 +10,8 @@
         "s3 s4"
         "ft ft";
     grid-gap:px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7fr 1fr 4fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr 1ft;
+    grid-template-rows: 7fr 1fr 7fr 5fr 1fr;
     margin: auto;
 }
 body
@@ -76,9 +76,7 @@ nav{
  
    
 }
-/* Menu / card layout styles */
 .menu-container{
-   /* place the menu main under the nav area; it will flow inside the grid */
    padding: 2rem;
    background: #fffefc;
    width: 100%;
@@ -156,11 +154,6 @@ nav{
    cursor: pointer;
    font-weight: 600;
 }
-
-@media (max-width: 520px){
-   .card img{ height: 130px; }
-   .menu-container{ padding: 1rem; }
-}
 .sec3{
    grid-area:s3;
    background-color: lightpink;
@@ -198,4 +191,7 @@ footer .kontakt{
    color: white;
    font-size: 1.5rem;
 }
- 
+.meny{
+font-size: 5rem;
+
+}
